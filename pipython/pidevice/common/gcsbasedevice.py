@@ -5,7 +5,8 @@
 from abc import abstractmethod
 from ...PILogger import PIDebug
 from ..interfaces.gcsdll import GCSDll
-from ..interfaces.piusb import PIUSB
+# Avoid having to use library pyusb
+# from ..interfaces.piusb import PIUSB
 from .. import gcserror
 from .gcsbasecommands import GCSBaseCommands
 from ..gcsmessages import GCSMessages

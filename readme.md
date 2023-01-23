@@ -1,3 +1,11 @@
+ALBA pipython python package. 
+
+Pipy: https://pypi.org/project/PIPython/
+
+Unzipped from **original repo**: https://github.com/PI-PhysikInstrumente/PIPython 
+
+Original README:
+
 # PIPython
 
 PIPython is a collection of Python modules to access a PI device and process

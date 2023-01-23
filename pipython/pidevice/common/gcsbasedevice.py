@@ -249,8 +249,11 @@ class GCSBaseDevice(GCSBaseCommands):
     def CloseConnection(self):
         """Reset axes property and close connection to the device."""
         del self.axes
-        self.dll.CloseConnection()
-
+        try:
+            self.dll.CloseConnection()
+        except:
+            # If dll is PISockert
+            self.dll.close()
     def CloseDaisyChain(self):
         """Close all connections on daisy chain and daisy chain connection itself."""
         self.dll.CloseDaisyChain()

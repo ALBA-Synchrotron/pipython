@@ -2,7 +2,9 @@ ALBA pipython python package.
 
 Pipy: https://pypi.org/project/PIPython/
 
-Unzipped from **original repo**: https://github.com/PI-PhysikInstrumente/PIPython 
+Unzipped from **original repo**: https://github.com/PI-PhysikInstrumente/PIPython
+
+It has been modified to avoid pyusb requirement. This means that this version does not work for devices controlled via USB.
 
 Original README:
 

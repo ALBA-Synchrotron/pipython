@@ -252,7 +252,7 @@ class GCSBaseDevice(GCSBaseCommands):
         try:
             self.dll.CloseConnection()
         except:
-            # If dll is PISockert
+            # If dll is PISocket
             self.dll.close()
     def CloseDaisyChain(self):
         """Close all connections on daisy chain and daisy chain connection itself."""
